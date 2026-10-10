@@ -96,8 +96,21 @@ public class MazeSolver {
 
         MazeSolver solver = new MazeSolver(mazeToSolve);
 
+        char[][] impossible = {
+                {'#', '#', '#', '#', '#', '#', '#'},
+                {'#', 'S', ' ', '#', ' ', ' ', '#'},
+                {'#', ' ', ' ', '#', ' ', '#', '#'},
+                {'#', ' ', '#', ' ', ' ', ' ', '#'},
+                {'#', ' ', '#', ' ', '#', 'F', '#'},
+                {'#', '#', '#', '#', '#', '#', '#'}
+        };
         System.out.println("Original Maze:");
         solver.printMaze();
+
+        MazeSolver imp = new MazeSolver(impossible);
+        System.out.println("Maze2: ");
+        imp.printMaze();
+
 
         if (solver.solve()) {
             System.out.println("Solution Found:");
@@ -105,5 +118,12 @@ public class MazeSolver {
             System.out.println("No Solution Found:");
         }
         solver.printMaze();
+
+        if (imp.solve()) {
+            System.out.println("Solution Found:");
+        } else {
+            System.out.println("No Solution Found:");
+        }
+        imp.printMaze();
     }
 }
