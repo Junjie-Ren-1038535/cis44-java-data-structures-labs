@@ -15,4 +15,5 @@ Key Operations:
 1. Register cards and update balances in constant time (O(1)).
 2. Store each commuter's most recent station exit timestamp to automatically apply a 50% discount on transfers within 90 minutes.
 3. Track and maintain a "Recent Taps" activity log using a capped history list.
+
 Target Java Collections: HashMap<String, CommuterCard>, LinkedHashMap or LinkedList.
