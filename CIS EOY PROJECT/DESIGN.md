@@ -68,5 +68,6 @@ UML Class Diagram:
 ```
 Data Structure Selection:
 I plan on using hash maps for the card system because it will be really fast to look up a commuterCard and it will allow O(1) look ups and update balances. An arraylist of Transaction because we are only storing a limited amount of transactions. 
+
 Big-O Expectations:
 Inserting new cards, deleting old cards, looking up cards, updating balances: O(1).
