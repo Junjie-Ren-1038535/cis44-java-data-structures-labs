@@ -19,6 +19,7 @@ Key Operations:
 Target Java Collections: HashMap<String, CommuterCard>, LinkedHashMap or LinkedList.
 
 UML Class Diagram:
+```
 -------------------------------------------
 |   CardSystem                            |
 -------------------------------------------
@@ -64,7 +65,7 @@ UML Class Diagram:
 | + getID(): int                                                   |
 | + getTime(): long                                                |
 --------------------------------------------------------------------
-
+```
 Data Structure Selection:
 I plan on using hash maps for the card system because it will be really fast to look up a commuterCard and it will allow O(1) look ups and update balances. An arraylist of Transaction because we are only storing a limited amount of transactions. 
 Big-O Expectations:
